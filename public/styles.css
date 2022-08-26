@@ -13,3 +13,12 @@ div > h2 {
     display: inline;
     font-size: 1em;
 }
+
+.process-icon > img {
+    width: 15%;
+}
+
+.card {
+    width: 70%;
+    background-color: rgb(213, 213, 213);
+}
