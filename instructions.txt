@@ -1,0 +1,21 @@
+OK 1. Se debe elegir una API para trabajar (PokeAPI)
+
+OK 2. Se debe crear un repositorio para todo el proyecto, el cual debe ser compartido al menos en los primeros 10 minutos del reto 
+
+OK 3. Todos los participantes deben contribuir en el proceso
+
+4. Se debe generar una landing page que presente al equipo, que presente la API elegida, una breve explicación del proyecto, accesos rápidos a cada funcionalidad valida en el proyecto
+
+5. Generar una page que presente un muestra de la información de la API
+
+6. Generar una funcionalidad de búsqueda, solo que el usuario tiene la libertad de elegir un campo o más (se tiene la libertad de que los resultados aparezcan en automatico o hasta que el usuario de click a un boton para comenzar la búsqueda)
+
+7. Tener un botón el cuál permita limpiar la búsqueda
+
+8. Mostrar cuantas búsquedas ha realizado el usuario durante la ejecución
+
+9. Mostrar el historico de las búsquedas realizadas, el historico debe contener, campos seleccionados, cadena de busqueda, los datos obtenidos y el total de resultados
+
+10. Como extra, poder visualizar el historico por segunda vez
+
+11. Las búsquedas deben ser con datos locales, es decir, en cuanto se haga la llamada de los datos a la API, se deben almacenar para poder ocuparlos
