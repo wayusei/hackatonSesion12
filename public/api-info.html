@@ -24,43 +24,9 @@
           <ul class="list-group" id="pokemon-types"></ul>
         </div>
       </div>
-
-      <div class="row"></div>
     </div>
 
-    <script src="api.js"></script>
-    <script>
-      async function showPokemons() {
-        const pokemons = await getPokemons();
-        const list = document.getElementById("pokemons-list");
-        console.log(pokemons);
-
-        pokemons.forEach((pokemon) => {
-          const listItem = document.createElement("li");
-          listItem.className = "list-group-item";
-          console.log(listItem);
-          listItem.append(pokemon.name);
-          list.appendChild(listItem);
-        });
-      }
-
-      async function showTypes() {
-        const types = await getTypes();
-        console.log(types);
-        const list = document.getElementById("pokemon-types");
-
-        types.forEach((type) => {
-          const listItem = document.createElement("li");
-          listItem.className = "list-group-item";
-          console.log(listItem);
-          listItem.append(type.name);
-          list.appendChild(listItem);
-        });
-      }
-
-      showPokemons();
-      showTypes();
-    </script>
+    <script src="api-info.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

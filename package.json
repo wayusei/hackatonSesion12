@@ -1,7 +1,7 @@
 {
   "name": "PokeAPI",
   "version": "1.0.0",
-  "description": "Proyecto final Bedu - Buscador de recetas",
+  "description": "Proyecto sesión 12",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
