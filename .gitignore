@@ -1,9 +1,9 @@
 API.js
 print.js
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
 .gitignore
-=======
->>>>>>> 062ddd3cb90e805a4a61161a517c751091f79399
+=========
+>>>>>>>>> Temporary merge branch 2
 ### Node ###
 # Logs
 logs
