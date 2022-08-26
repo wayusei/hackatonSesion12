@@ -13,13 +13,11 @@ function onRequestHandler() {
         console.log(data);
         const HTMLResponse = document.querySelector("#app");
 
-        const template = data.map((meals) => `<li>${meals.strMeal}</li>`);
-        HTMLResponse.innerHTML = `<ul>${template}</ul>`;
     }
 }
 let data;
 
-function apiByName(nameSearch) {
+function apiByName(buscar) {
     const xhrequest = new XMLHttpRequest();
 
     xhrequest.addEventListener("load", function(){
@@ -30,7 +28,7 @@ function apiByName(nameSearch) {
 
     }
     });
-    xhrequest.open("GET",`${API_URL}ditto`);
+    xhrequest.open("GET",`${API_URL}${buscar}`);
     xhrequest.send();    
 }
 
@@ -45,10 +43,10 @@ const buttonSearch = document.getElementById("buttonSearch");
 function print(){
     const inputSearch = document.getElementById("inputSearch");
     console.log("function print is running");
-    console.log(inputSearch.value)
+    var buscar = inputSearch.value;
     // var inputSearch = inputSearch.value.toUpperCase();
-    console.log("Buscar: ",inputSearch)
-    apiByName(inputSearch);
+    console.log("Buscar: ",buscar)
+    apiByName(buscar);
     console.log(data);
     }
 // printResults.addEventListener("click", print);
