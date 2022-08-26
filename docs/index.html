@@ -1,147 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Estilos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <!-- Título -->
     <title>Reto Bedu API</title>
-</head>
+  </head>
 
-<body>
-    <h1>Hackaton Bedu</h1>
-    <div>
-        <h2>Api elegida: </h2>
+  <body>
+    <div class="container">
+      <h1>Hackaton Bedu</h1>
+      <div>
+        <h2>Api elegida:</h2>
         <a href="https://pokeapi.co/about" target="blank">Pokeapi</a>
-    </div>
+      </div>
 
-    <div class="card">
-        <h3>Explicacion del proyecto</h3>
-        <p>Se busca aplicar los conocimientos vistos durante las clases, el fin de este reto es conectarnos a una API y
-            mostrar lo siguiente: </p>
-        <ul>
-            <li>Presente un muestra de la información de la API</li>
-            <li>Generar una funcionalidad de búsqueda</li>
-            <li>Tener un botón el cuál permita limpiar la búsqueda</li>
-            <li>Mostrar cuantas búsquedas ha realizado el usuario durante la ejecución</li>
-            <li>Mostrar el histórico de las búsquedas realizadas</li>
-        </ul>
-        <p>Extra: </p>
-        <ul>
-            <li>Poder visualizar el historico por segunda vez</li>
-            <li>Las búsquedas deben ser con datos locales</li>
-        </ul>
-    </div>
+      <div class="mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h3>Explicacion del proyecto</h3>
+            </div>
+            <p>
+              Se busca aplicar los conocimientos vistos durante las clases, el
+              fin de este reto es conectarnos a una API y mostrar lo siguiente:
+            </p>
+            <ul>
+              <li>Presente un muestra de la información de la API</li>
+              <li>Generar una funcionalidad de búsqueda</li>
+              <li>Tener un botón el cuál permita limpiar la búsqueda</li>
+              <li>
+                Mostrar cuantas búsquedas ha realizado el usuario durante la
+                ejecución
+              </li>
+              <li>Mostrar el histórico de las búsquedas realizadas</li>
+            </ul>
+            <p>Extra:</p>
+            <ul>
+              <li>Poder visualizar el historico por segunda vez</li>
+              <li>Las búsquedas deben ser con datos locales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <a href="busqueda.html"><button class="btn btn-primary">Ir a la búsqueda</button></a>
+      <div class="mt-2">
+        <div class="btn-group">
+          <a href="busqueda.html" class="btn btn-primary">Ir a la búsqueda</a>
+          <a href="api-info.html" class="btn btn-success"
+            >Ejemplo de información de la API</a
+          >
+        </div>
+      </div>
 
-    <footer>
+      <footer class="mt-2">
         <section class="blog">
-            <section class="container blog">
-              <div class="row">
-                <div class="col">
-                  <article class="process-list">
-                    <div class="process">
-                      <div class="process-icon">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Build icon" />
-                      </div>
-                      <div class="process-description">
-                        <h3>Dionicio Mata</h3>
-                      </div>
+          <section class="container blog">
+            <div class="row">
+              <div class="col">
+                <article class="process-list">
+                  <div class="process">
+                    <div class="process-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                        alt="Build icon"
+                      />
                     </div>
-                    <div class="process">
-                      <div class="process-icon">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Attract icon" />
-                      </div>
-                      <div class="process-description">
-                        <h3>Grecia Cardona</h3>
-                      </div>
+                    <div class="process-description">
+                      <h3>Dionicio Mata</h3>
                     </div>
-                    <div class="process">
-                      <div class="process-icon">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Convert icon" />
-                      </div>
-                      <div class="process-description">
-                        <h3>Rodrigo Rosas</h3>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="col">
-                    <article class="process-list">
-                      <div class="process">
-                        <div class="process-icon">
-                          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Build icon" />
-                        </div>
-                        <div class="process-description">
-                          <h3>Alan Ramos</h3>
-                        </div>
-                      </div>
-                      <div class="process">
-                        <div class="process-icon">
-                          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Build icon" />
-                        </div>
-                        <div class="process-description">
-                          <h3>Gonzalo Ramos</h3>
-                        </div>
-                      </div>
-                      <div class="process">
-                        <div class="process-icon">
-                          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Attract icon" />
-                        </div>
-                        <div class="process-description">
-                          <h3>Luis Arredondo</h3>
-                        </div>
-                      </div>
-                      
-                      <div class="process">
-                        <div class="process-icon">
-                          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Convert icon" />
-                        </div>
-                        <div class="process-description">
-                          <h3>Jaime Vazquez</h3>
-                        </div>
-                      </div>
-                    </article>
                   </div>
-        
-                <div class="col">
-                    <div class="process">
-                        <div class="process-icon">
-                          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Convert icon" />
-                        </div>
-                        <div class="process-description">
-                          <h3>Francisco -</h3>
-                        </div>
-                      </div>
-                      <div class="process">
-                        <div class="process-icon">
-                          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Convert icon" />
-                        </div>
-                        <div class="process-description">
-                          <h3>Román Gonzáles</h3>
-                        </div>
-                      </div>
-                      <div class="process">
-                        <div class="process-icon">
-                          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg" alt="Convert icon" />
-                        </div>
-                        <div class="process-description">
-                          <h3>Asael Hernández</h3>
-                        </div>
-                      </div>
-                      </div>
+                  <div class="process">
+                    <div class="process-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                        alt="Attract icon"
+                      />
                     </div>
+                    <div class="process-description">
+                      <h3>Grecia Cardona</h3>
+                    </div>
+                  </div>
+                  <div class="process">
+                    <div class="process-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                        alt="Convert icon"
+                      />
+                    </div>
+                    <div class="process-description">
+                      <h3>Rodrigo Rosas</h3>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="process-list">
+                  <div class="process">
+                    <div class="process-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                        alt="Build icon"
+                      />
+                    </div>
+                    <div class="process-description">
+                      <h3>Alan Ramos</h3>
+                    </div>
+                  </div>
+                  <div class="process">
+                    <div class="process-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                        alt="Build icon"
+                      />
+                    </div>
+                    <div class="process-description">
+                      <h3>Gonzalo Ramos</h3>
+                    </div>
+                  </div>
+                  <div class="process">
+                    <div class="process-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                        alt="Attract icon"
+                      />
+                    </div>
+                    <div class="process-description">
+                      <h3>Luis Arredondo</h3>
+                    </div>
+                  </div>
+
+                  <div class="process">
+                    <div class="process-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                        alt="Convert icon"
+                      />
+                    </div>
+                    <div class="process-description">
+                      <h3>Jaime Vazquez</h3>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col">
+                <div class="process">
+                  <div class="process-icon">
+                    <img
+                      src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                      alt="Convert icon"
+                    />
+                  </div>
+                  <div class="process-description">
+                    <h3>Francisco -</h3>
+                  </div>
+                </div>
+                <div class="process">
+                  <div class="process-icon">
+                    <img
+                      src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                      alt="Convert icon"
+                    />
+                  </div>
+                  <div class="process-description">
+                    <h3>Román Gonzáles</h3>
+                  </div>
+                </div>
+                <div class="process">
+                  <div class="process-icon">
+                    <img
+                      src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                      alt="Convert icon"
+                    />
+                  </div>
+                  <div class="process-description">
+                    <h3>Asael Hernández</h3>
                   </div>
                 </div>
               </div>
-            </section>
-    </footer>
-
-</body>
-
+            </div>
+          </section>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
