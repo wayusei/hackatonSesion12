@@ -1,0 +1,14 @@
+body {
+    padding: 3em;
+    background-color: #fdf8d8;
+}
+
+h1 {
+    text-align: center;
+    color: #3B4CCA;
+}
+
+div > h2 {
+    display: inline;
+    font-size: 1em;
+}
