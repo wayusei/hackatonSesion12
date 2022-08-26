@@ -1,6 +1,9 @@
 API.js
 print.js
+<<<<<<< HEAD
 .gitignore
+=======
+>>>>>>> 062ddd3cb90e805a4a61161a517c751091f79399
 ### Node ###
 # Logs
 logs
