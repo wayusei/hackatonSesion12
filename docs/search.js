@@ -41,8 +41,6 @@ async function getTypes() {
   return types.results;
 }
 
-console.log("nueva linea de texto, data antes de buscar: ", data);
-
 // Exponer HTMLResponse al scope global
 const HTMLResponse = document.querySelector("#app");
 
@@ -93,6 +91,7 @@ function search() {
 function saveSearch(search) {
   let searches = localStorage.getItem("searchHistory");
   if (!searches) searches = [];
+  searches.push(search);
   localStorage.setItem("searchHistory", searches);
 }
 
