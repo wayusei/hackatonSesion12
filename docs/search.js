@@ -6,10 +6,7 @@ const xhr = new XMLHttpRequest();
 
 function onRequestHandler() {
   if (this.readyState === 4 && this.status === 200) {
-    console.log(this.response);
     const data = Object.entries(JSON.parse(this.response));
-    console.log(Array.isArray(data));
-    console.log(data);
     const HTMLResponse = document.querySelector("#app");
   }
 }
@@ -88,20 +85,57 @@ function search() {
   return results;
 }
 
-function saveSearch(search) {
+// Reads the user's search history from the local storage
+function readSearchHistory() {
   let searches = localStorage.getItem("searchHistory");
-  if (!searches) searches = [];
-  searches.push(search);
-  localStorage.setItem("searchHistory", searches);
+  if (searches) {
+    searches = JSON.parse(searches);
+  } else {
+    searches = [];
+  }
+
+  return searches;
 }
 
-function renderList(listName, records, recordProperty) {
+// Updates the user's search history in the local storage
+function saveSearch(search) {
+  let searches = readSearchHistory();
+  searches.push(search);
+  localStorage.setItem("searchHistory", JSON.stringify(searches));
+}
+
+// Counts the total number of searches
+function countSearches() {
+  const searchHistory = readSearchHistory();
+  return searchHistory.length;
+}
+
+// Retrieves recent searches from local storage
+function getRecentSearches() {
+  const searchHistory = readSearchHistory();
+  let results = [...searchHistory];
+  if (searchHistory.length >= 5) {
+    results = searchHistory.slice(
+      searchHistory.length - 5,
+      searchHistory.length - 1
+    );
+  }
+  return results;
+}
+
+// Renders a list in the UI
+function renderList(listName, records, recordProperty = null) {
   const list = document.getElementById(listName);
+  list.innerHTML = "";
+  if (list.style.display === "none") list.style.display = "block";
   records.forEach((record) => {
     const listItem = document.createElement("li");
     listItem.className = "list-group-item";
-    console.log(listItem);
-    listItem.append(record[recordProperty]);
+    if (recordProperty) {
+      listItem.append(record[recordProperty]);
+    } else {
+      listItem.append(record);
+    }
     list.appendChild(listItem);
   });
 }
@@ -120,4 +154,10 @@ document.addEventListener("DOMContentLoaded", async function (event) {
   localStorage.setItem("pokemonTypes", JSON.stringify(types));
 
   buttonSearch.addEventListener("click", search);
+
+  const totalSearches = document.getElementById("search-total");
+  totalSearches.append(countSearches());
+
+  const recentSearches = getRecentSearches();
+  renderList("recent-searches", recentSearches);
 });
